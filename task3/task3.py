@@ -5,7 +5,6 @@ def task(csv_string):
     input = serialize_csv(csv_string)
     result = []
     return [r1_nodes(input), r2_nodes(input), r3_nodes(input), r4_nodes(input), r5_nodes(input)]
-    
 
 def serialize_csv(csv_string):
     f = StringIO(csv_string)
