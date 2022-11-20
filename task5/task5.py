@@ -7,7 +7,7 @@ def task(s1, s2):
     mat_1 = rel_matrix(ranges_1)
     mat_2 = rel_matrix(ranges_2)
     mul_mat = np.multiply(mat_1, mat_2)
-    return(conflicts(mul_mat))
+    return(json.dumps(conflicts(mul_mat)))
 
 def rel_matrix(s):
     rows = len(all_objects(s))
